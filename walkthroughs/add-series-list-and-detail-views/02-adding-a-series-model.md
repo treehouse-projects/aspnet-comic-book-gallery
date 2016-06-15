@@ -1,10 +1,6 @@
 
 # Add Series List and Detail Views
 
-In this step-by-step walkthrough, we’ll update the Comic Book Gallery website with a feature that will allow users to view the list of available series for our comic books.
-
-To implement this feature, we’ll need to extend our data model, add a new repository, controller, and a couple of new views. Along the way, there’ll be lots of opportunity to practice what we’ve learned in the [ASP.NET MVC Basics](https://teamtreehouse.com/library/aspnet-mvc-basics) course.
-
 ## Adding a Series Model
 
 In this step, we’ll extend our data model to include a `Series` model. Let’s start by taking a look at the relationship that exists between our `ComicBook` and `Series` models.
@@ -212,3 +208,5 @@ Go ahead and stop the website.
 If you’re using GitHub, let’s commit our changes. Enter a commit message of “Added Series model” and click the “Commit All” button.
 
 In the next step, let’s prepare for adding our `SeriesRepository` class by revisiting where our data lives.
+
+[Return to Introduction](01-introduction.md)
