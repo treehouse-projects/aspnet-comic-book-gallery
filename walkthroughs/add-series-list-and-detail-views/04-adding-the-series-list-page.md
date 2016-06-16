@@ -195,6 +195,6 @@ There's no need to test the links to the series detail page yet, as we haven't b
 
 If you're using GitHub, let's commit our changes. Enter a commit message of "Added Series List view" and click the "Commit All" button.
 
-In the [next step](06-adding-the-series-detail-page.md), we'll add the series detail page.
+In the [next step](05-adding-the-series-detail-page.md), we'll add the series detail page.
 
-[Return to Introduction](01-introduction.md)
+[Return to Introduction](README.md)

@@ -207,6 +207,6 @@ Go ahead and stop the website.
 
 If you're using GitHub, let's commit our changes. Enter a commit message of "Added Series model" and click the "Commit All" button.
 
-In the [next step](03-centralizing-our-data.md), let's prepare for adding our `SeriesRepository` class by revisiting where our data lives.
+In the [next step](02-centralizing-our-data.md), let's prepare for adding our `SeriesRepository` class by revisiting where our data lives.
 
-[Return to Introduction](01-introduction.md)
+[Return to Introduction](README.md)

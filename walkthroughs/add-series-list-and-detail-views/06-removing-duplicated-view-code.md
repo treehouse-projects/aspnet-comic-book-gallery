@@ -27,4 +27,4 @@ Update the "Comic Books" and "Series Detail" views to use the partial view
     Replace the comic books list markup in the "Series/Detail" view with a call to "Html.Partial"
         @Html.Partial("_ComicBooksList", Model.Issues)
 
-[Return to Introduction](01-introduction.md)
+[Return to Introduction](README.md)

@@ -260,6 +260,6 @@ Go ahead and stop the website.
 
 If you're using GitHub, let's commit our changes. Enter a commit message of "Added Data class" and click the "Commit All" button.
 
-In the [next step](04-adding-the-series-repository.md), we'll add the series repository.
+In the [next step](03-adding-the-series-repository.md), we'll add the series repository.
 
-[Return to Introduction](01-introduction.md)
+[Return to Introduction](README.md)

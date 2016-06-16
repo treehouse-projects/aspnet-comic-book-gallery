@@ -33,6 +33,6 @@ Oops! The links to the Comic Book Detail page are broken!
   Update the "Html.ActionLink" and "Url.Action" method calls to explicitly name the "ComicBooks" controller
     Be careful which overload you are calling! It's easy to think you're calling the correct method overload but actually be targeting the wrong one.
 
-In the [next step](07-removing-duplicated-view-code.md), we'll review the DRY design principle and remove some duplicated code in our views.
+In the [next step](06-removing-duplicated-view-code.md), we'll review the DRY design principle and remove some duplicated code in our views.
 
-[Return to Introduction](01-introduction.md)
+[Return to Introduction](README.md)
