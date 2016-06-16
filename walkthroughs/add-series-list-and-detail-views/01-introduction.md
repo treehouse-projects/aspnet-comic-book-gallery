@@ -10,3 +10,6 @@ To implement this feature, we’ll need to extend our data model, add a new repo
 * [Adding a Series Model](02-adding-a-series-model.md)
 * [Centralizing Our Data](03-centralizing-our-data.md)
 * [Adding the Series Repository](04-adding-the-series-repository.md)
+* [Adding the Series List Page](05-adding-the-series-list-page.md)
+* [Adding the Series Detail Page](06-adding-the-series-detail-page.md)
+* [Removing Duplicated View Code](07-removing-duplicated-view-code.md)

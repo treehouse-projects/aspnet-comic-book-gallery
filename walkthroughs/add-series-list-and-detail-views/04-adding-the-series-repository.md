@@ -181,6 +181,6 @@ Visual Studio opens the Output window so that we can monitor the progress of the
 
 If you’re using GitHub, let’s commit our changes. Enter a commit message of “Added series repository” and click the “Commit” button.
 
-In the next step, we’ll turn our attention to the Series List page.
+In the [next step](05-adding-the-series-list-page.md), we’ll turn our attention to the Series List page.
 
 [Return to Introduction](01-introduction.md)
