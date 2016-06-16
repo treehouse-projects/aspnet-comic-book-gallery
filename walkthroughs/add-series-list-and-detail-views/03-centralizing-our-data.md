@@ -183,10 +183,12 @@ We’re getting close to being done with our `Data` class, but our implementatio
 
 Ideally, we only want to call the `InitData` method once. We can accomplish this by adding a static constructor to our class that calls the `InitData` method. Static constructors (see [https://msdn.microsoft.com/en-us/library/k9x6w0hc.aspx](https://msdn.microsoft.com/en-us/library/k9x6w0hc.aspx)) are called just before any instances of our class are created or any static members are accessed. They specifically exist to initialize class members, which fits our needs exactly.
 
+```
 static Data()
 {
     InitData();
 }
+```
 
 Visual Studio is complaining about our `InitData` method call. We’re getting this error because we’re attempting to call an instance method from a static method. This is just an oversight on our part—we can easily make the `InitData` method static so that it can be called from our static constructor. Just add the `static` keyword right before the return type of the `InitData` method.
 
