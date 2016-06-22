@@ -22,9 +22,11 @@ Change the "foreach" loop statement to just reference "Model"
 @foreach (var comicBook in Model.Issues)
 
 Update the "Comic Books" and "Series Detail" views to use the partial view
-    Replace the comic books list markup in the "Comics/Index" view with a call to "Html.Partial"
+    Replace the Comic Books List markup in the "Comics/Index" view with a call to "Html.Partial"
         @Html.Partial("_ComicBooksList", Model)
-    Replace the comic books list markup in the "Series/Detail" view with a call to "Html.Partial"
+    Replace the Comic Books List markup in the "Series/Detail" view with a call to "Html.Partial"
         @Html.Partial("_ComicBooksList", Model.Issues)
+
+Pass in "controller" and "action" parameters?
 
 [Return to Introduction](README.md)

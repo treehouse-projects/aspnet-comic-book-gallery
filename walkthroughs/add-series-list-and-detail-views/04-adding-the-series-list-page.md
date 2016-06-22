@@ -3,7 +3,7 @@
 
 ## Adding the Series List Page
 
-Now that we've updated our models, centralized our data, and created our repository, we're ready to add the controller and view for our series list page. Let's start by adding the `SeriesController` class.
+Now that we've updated our models, centralized our data, and created our repository, we're ready to add the controller and view for our Series List page. Let's start by adding the `SeriesController` class.
 
 Instead of adding a class using the "Add > Class" menu item, let's right click on the "Controllers" folder and select the "Add > Controller" menu item.
 
@@ -129,15 +129,15 @@ Inside of the loop, start by adding an `<li>` element followed by an `<h4>` elem
 }
 ```
 
-For the `<h4>` element content, we need to render the series title as a hyperlink to our currently non-existent series detail page (don't worry, we'll work on the series detail page in the next step!)
+For the `<h4>` element content, we need to render the series title as a hyperlink to our currently non-existent Series Detail page (don't worry, we'll work on the Series Detail page in the next step!)
 
-To create the hyperlink, we can use the `ActionLink` HTML helper method, passing the `series.Title` property value for the `linkText` parameter and the string literal "Detail" for the `actionName` parameter. Just like we did when linking from our comic books list page to the comic books detail page, we need to pass an anonymous object for the `routeValues` parameter that has as `id` property set to the `series.Id` property value.
+To create the hyperlink, we can use the `ActionLink` HTML helper method, passing the `series.Title` property value for the `linkText` parameter and the string literal "Detail" for the `actionName` parameter. Just like we did when linking from our Comic Books List page to the comic books detail page, we need to pass an anonymous object for the `routeValues` parameter that has as `id` property set to the `series.Id` property value.
 
 ```
 <h4>@Html.ActionLink(series.Title, "Detail", new { id = series.Id })</h4>
 ```
 
-Don't forget to remove the `<li>` element below our `foreach` loop. And that finishes our series list view!
+Don't forget to remove the `<li>` element below our `foreach` loop. And that finishes our Series List view!
 
 ```
 @model ComicBookGallery.Models.Series[]
@@ -162,7 +162,7 @@ Don't forget to remove the `<li>` element below our `foreach` loop. And that fin
 </div>
 ```
 
-Before we run and test our website, let's add a couple of menu items to the layout page, so users have a way to browse between the comic books and series list pages.
+Before we run and test our website, let's add a couple of menu items to the layout page, so users have a way to browse between the comic books and Series List pages.
 
 Open the "_Layout.cshtml" file in the "Views/Shared" folder. Scroll down to the line that contains the code comment `<!-- Add menu items here -->`. Replace that code comment with two `<li>` elements.
 
@@ -189,12 +189,12 @@ For the second `<li>` element, we'll do the same thing, only this time we'll sup
 
 Let's test our changes! Save all of the open files and press `F5` to run our website.
 
-You should first see the comic books list page. The list of comic books should look as it did before, as we didn't make any changes to it. Notice at the top of the page that we now have two menu items: "Comic Books" and "Series". Click on the "Series" menu item to browse to the "Series" list page. And here's our new series list page!
+You should first see the Comic Books List page. The list of comic books should look as it did before, as we didn't make any changes to it. Notice at the top of the page that we now have two menu items: "Comic Books" and "Series". Click on the "Series" menu item to browse to the "Series" list page. And here's our new Series List page!
 
-There's no need to test the links to the series detail page yet, as we haven't built it yet. Go ahead and close Chrome and stop the website.
+There's no need to test the links to the Series Detail page yet, as we haven't built it yet. Go ahead and close Chrome and stop the website.
 
 If you're using GitHub, let's commit our changes. Enter a commit message of "Added Series List view" and click the "Commit All" button.
 
-In the [next step](05-adding-the-series-detail-page.md), we'll add the series detail page.
+In the [next step](05-adding-the-series-detail-page.md), we'll add the Series Detail page.
 
 [Return to Introduction](README.md)
