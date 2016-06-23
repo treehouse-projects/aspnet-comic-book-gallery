@@ -27,7 +27,7 @@ Then in the "Preview and code" section, select and copy the code in the field ju
 
 Now that we've got our "Tweet" button code, let's add it to our Comic Book Detail view! Open the "Views/ComicBooks/Detail.cshtml" view.
 
-Let's add the "Tweet" button in the "well" section of the view. Notice that I'm also adding an empty `<p>` element just above the "Tweet" button in order to create some whitespace between the button and the content just above it.
+Let's add the "Tweet" button in the "well" section of the view. Notice that I'm also adding a `<p>` element, containing a non-breaking space HTML entity, just above the "Tweet" button in order to create some whitespace between the button and the content just above it.
 
 ```
 <div class="well">
