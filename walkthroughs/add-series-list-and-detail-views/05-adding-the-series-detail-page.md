@@ -229,7 +229,7 @@ Let's review the "Return to List" button markup in the "/Views/Shared/_Layout.cs
 
 This error is similar to the previous error: we're not supplying the controller name so the current controller's name is used by default. When we're viewing the Comic Book Detail page, the current controller is the "ComicBooks" controller so the "Return to List" button will send the user to the Comic Books List page instead of back to the Series Detail page.
 
-There are a variety of ways that we could resolve this issue. Instead of using the `ActionLink` HTML helper method to create the "Return to List" button, we could switch to manually rendering the `<a>` element and setting the `href` attribute to the referer's URL. Or we could use a JavaScript based approach that leverages the brower's `window.history` object's `back` method.
+There are a variety of ways that we could resolve this issue. Instead of using the `ActionLink` HTML helper method to create the "Return to List" button, we could switch to manually rendering the `<a>` element and setting the `href` attribute to the referrer's URL. Or we could use a JavaScript based approach that leverages the brower's `window.history` object's `back` method.
 
 What method do you think would work best? Share your thoughts on the [Treehouse Community](https://teamtreehouse.com/community).
 
