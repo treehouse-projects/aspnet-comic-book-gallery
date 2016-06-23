@@ -99,9 +99,7 @@ If you're using GitHub, let's commit our changes. Enter a commit message of "Add
 
 This concludes our walkthrough of adding Series List and Detail views to our website. I hope you had fun and learned something along the way!
 
-If you find any errors or mistakes with this walkthrough, feel free to fork this repo, fix the error, and issue a pull request back to this repo.
-
-Reach out to me on Twitter [@SmashDev](https://twitter.com/SmashDev) and give me your feedback and suggestions on how I can make this walkthrough better.
+If you find any errors or mistakes with this walkthrough, feel free to fork this repo, fix the error, and issue a pull request back to this repo. Reach out to me on Twitter [@SmashDev](https://twitter.com/SmashDev) and give me your feedback and suggestions on how I can make this walkthrough better.
 
 See you next time!
 
