@@ -7,5 +7,5 @@ In this step-by-step walkthrough, we'll update the Comic Book Gallery website's 
 
 To implement this feature, we'll use Twitter's website to generate the code for our "Tweet" button and learn how to use ASP.NET app configuration to parameterize key application values.
 
-* [Adding a Series Model](01-adding-a-tweet-button.md)
-* [Centralizing Our Data](02-using-app-configuration.md)
+* [Adding a Tweet Button](01-adding-a-tweet-button.md)
+* [Using App Configuration](02-using-app-configuration.md)
