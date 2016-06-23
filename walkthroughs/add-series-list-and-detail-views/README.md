@@ -13,3 +13,5 @@ To implement this feature, we'll need to extend our data model, add a new reposi
 * [Adding the Series List Page](04-adding-the-series-list-page.md)
 * [Adding the Series Detail Page](05-adding-the-series-detail-page.md)
 * [Removing Duplicated View Code](06-removing-duplicated-view-code.md)
+
+[Return to Walkthroughs](../)
