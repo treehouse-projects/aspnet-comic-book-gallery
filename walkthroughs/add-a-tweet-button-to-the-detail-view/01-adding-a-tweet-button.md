@@ -19,7 +19,10 @@ In the "Choose a button" section, select the "Share a link" option. Under the "B
 Then in the "Preview and code" section, select and copy the code in the field just below the preview "Tweet" button. At the time of this writing, the generated code looks like this.
 
 ```
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="SmashDev" data-size="large" data-hashtags="comicbooks">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<a href="https://twitter.com/share" class="twitter-share-button" 
+   data-via="SmashDev" data-size="large" 
+   data-hashtags="comicbooks">Tweet</a> 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 ```
 
 Now that we've got our "Tweet" button code, let's add it to our Comic Book Detail view! Open the "Views/ComicBooks/Detail.cshtml" view.
@@ -44,7 +47,9 @@ Let's add the "Tweet" button in the "well" section of the view. Notice that I'm 
         </div>
     }
     <p>&nbsp;</p>
-    <p><a href="https://twitter.com/share" class="twitter-share-button" data-via="SmashDev" data-size="large" data-hashtags="comicbooks">Tweet</a></p>
+    <p><a href="https://twitter.com/share" class="twitter-share-button" 
+          data-via="SmashDev" data-size="large" 
+          data-hashtags="comicbooks">Tweet</a></p>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
 ```
