@@ -47,7 +47,7 @@ public ComicBook GetComicBook(int id)
 {
     ComicBook comicBookToReturn = null;
 
-    foreach (var comicBook in Data.ComicBooksData)
+    foreach (var comicBook in Data.ComicBooks)
     {
         if (comicBook.Id == id)
         {
