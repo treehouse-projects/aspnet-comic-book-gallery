@@ -100,12 +100,28 @@ public Series GetSeriesDetail(int id)
 
 Okay—our method is starting to shape up nicely, but there's another requirement that need to work on. When retrieving a series, we need to populate the `Series.Issues` property with the comic books that belong to that series.
 
-To start with, let's add an `if` statement that checks to see if we found a `Series` object for the provided `id` argument value. This is important to do, as we don't want to attempt to set the `Issues` property on the `seriesToReturn` object if it is null.
+To start with, let's add an `if` statement, just after the `foreach` loop, that checks to see if we found a `Series` object for the provided `id` argument value. This is important to do, as we don't want to attempt to set the `Issues` property on the `seriesToReturn` object if it is null.
 
 ```
-if (seriesToReturn != null)
+public Series GetSeriesDetail(int id)
 {
+    Series seriesToReturn = null;
 
+    foreach (var series in Data.Series)
+    {
+        if (series.Id == id)
+        {
+            seriesToReturn = series;
+            break;
+        }
+    }
+
+    if (seriesToReturn != null)
+    {
+        // TODO Get the comic books for this series
+    }
+
+    return seriesToReturn;
 }
 ```
 
@@ -180,7 +196,51 @@ if (seriesToReturn != null)
 }
 ```
 
-And that completes our `GetSeriesDetail` method! Before we commit our changes, let's build our project by pressing `CTRL+SHIFT+B`.
+And that completes our `GetSeriesDetail` method! Here's the completed `SeriesRepository` class in its entirety.
+
+```
+public class SeriesRepository
+{
+    public Series[] GetSeries()
+    {
+        return Data.Series;
+    }
+
+    public Series GetSeriesDetail(int id)
+    {
+        Series seriesToReturn = null;
+
+        foreach (var series in Data.Series)
+        {
+            if (series.Id == id)
+            {
+                seriesToReturn = series;
+                break;
+            }
+        }
+
+        if (seriesToReturn != null)
+        {
+            var comicBooks = new ComicBook[0];
+
+            foreach (var comicBook in Data.ComicBooks)
+            {
+                if (comicBook.Series != null && comicBook.Series.Id == id)
+                {
+                    Array.Resize(ref comicBooks, comicBooks.Length + 1);
+                    comicBooks[comicBooks.Length - 1] = comicBook;
+                }
+            }
+
+            seriesToReturn.Issues = comicBooks;
+        }
+
+        return seriesToReturn;
+    }
+}
+```
+
+Before we commit our changes, let's build our project by pressing `CTRL+SHIFT+B`.
 
 Visual Studio opens the Output window so that we can monitor the progress of the build and see the results upon its completion. You should see that one project succeeded and zero failed.
 
